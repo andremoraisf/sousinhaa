@@ -1,0 +1,33 @@
+print('Telefonou para a vitima?')
+p1 = input('')
+print('Esteve no local do crime?')
+p2 = input('')
+print('Mora perto da vitima?')
+p3 = input('')
+print('Devia para a vitima?')
+p4 = input('')
+print('Ja trabalhou com a vitima?')
+p5 = input('')
+
+conta = 0
+
+if p1 =='True':
+    conta = conta +1
+if p2=='True':
+    conta = conta +1
+if p3== 'True':
+    conta = conta +1
+if p4== 'True':
+    conta = conta +1
+if p5== 'True':
+    conta = conta +1
+
+if conta==2:
+    print('Suspeita')
+if conta==3 or conta==4:
+    print('Cumplice')
+if conta==5:
+    print('Assassino')
+if conta==0:
+    print('Inocente')
+
