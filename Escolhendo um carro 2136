@@ -1,0 +1,27 @@
+espi = input('')
+porm = input('')
+custo = float(input(''))
+motor = float(input(''))
+cambio = input('')
+
+if espi=='A' and porm=='G':
+    if custo<100000 and motor >=1.5 and cambio=='A':
+         print('Pode comprar!') #Se atender a 3 op��es
+
+    elif custo <100000 and motor >=1.5 or custo < 100000 and cambio=='A' >= 1.5 or cambio=='A' and motor>=1.5:
+        print('Boa compra.') #2 Requisitos desejaveis
+
+    elif custo <10000:
+        print('Pode ser uma opção.') #1 Requisito desejavel
+
+    elif motor >=1.5:
+        print('Pode ser uma opção.') #1 Requisito desejavel
+
+    elif cambio=='A':
+        print('Pode ser uma opção.') #1 Requisito desejavel
+
+    else:
+        print('Recomendo pensar melhor...')
+
+else:
+    print('Não compre!')
